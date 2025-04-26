@@ -1,0 +1,67 @@
+<DOCTYPE html>
+    <html>
+    <head>
+    <title>Truthy_Falsy</title>
+    </head>
+    <body>
+        <script>
+            if(0){
+                console.log("falsy")
+            }
+            
+            if(false){
+                console.log("falsy")
+            }
+
+            if(true){
+            console.log("truthy")
+            }
+            
+            cartquantity=8
+            if(cartquantity){
+                console.log("cart has products")
+            }
+
+            console.log(!0); //True
+
+            console.log("text"/5); //NAN  
+
+            let variable1
+            console.log(variable1) //undefined
+            // false,0,NAN,undefined,null are falsy values
+
+            const result1 = true ? "truthy" : "falsy"
+            //In the above statement true? refers to if condition if its true it executes truthy i.e if block. if it false it executes falsy i.e else block.
+            console.log(result1)
+            //In the above ,condition is true so it executed truthy i.e, if block
+
+            const result2=false? "truthy" : "falsy"
+            console.log(result2)
+            //In the above, condition is false so it executed falsy i.e, lse block
+
+            //The above code is example for Ternary operater- ?:
+
+            const message=false && "hello"
+            console.log(message) //false
+
+            const message3=true && "hello"
+            console.log(message3) //hello
+            
+            const message1=5 && "hello"
+            console.log(message1)
+
+            //The above code is example of Guard operator
+
+            const message2=5 || "hello"
+            console.log(message2)//5
+
+            //The above code is an example of or operator
+
+
+
+
+
+
+        </script>
+    </body>
+    </html>
